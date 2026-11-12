@@ -1,0 +1,102 @@
+# Laravel / PHP
+/vendor
+/.idea
+/.vscode
+/.nnn
+/.dockerinit
+*.log
+*.tmp
+
+# Environment files
+.env*
+.env.backup
+.env.production
+
+# PHP OpCache
+opcache
+
+# PHP CS Fixer
+.php-cs-fixer.php
+
+# Laravel specific
+/homestead
+/Homestead.json
+/Homestead.yaml
+
+# Laravel production & staging
+/.setup
+
+# PHPUnit
+.phpunit.result.cache
+
+# Codeception
+.codeception/
+
+# Vite / Frontend Build
+/public/build
+/public/hot
+/public/storage
+/resources/js
+/resources/css
+/resources/sass
+/resources/less
+
+# Tailwind CSS
+/node_modules
+/tailwindcss.config.js
+/postcss.config.js
+
+# Build outputs
+/dist
+/.vite
+
+# Monochrome light theme assets
+/public/fonts-manifest.dev.json
+
+# Runtime
+/storage/app
+/storage/framework
+/storage/logs
+
+# Mailcatcher
+/mailhog
+
+# Debug Bar
+/debugbar
+
+# Auto-generated files
+/ide_helper.php
+/app/Models/UserFactory.php
+
+# Backup files
+*.bak
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JWT & Passport
+/passport/personal-access-tokens.json
+
+# Cache
+/cache
+/cache_locks
+
+# Queue
+/queue
+/job_batches
+
+# Failed jobs
+/failed_jobs
+
+# Scheduler
+/schedule
+
+# Pail (Laravel log viewer)
+/pail
+
+# General
+/.cursor
+/.codex
+/.zed
