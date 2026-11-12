@@ -105,15 +105,37 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Configure your database credentials in `.env`:
+### Environment Configuration
+
+The application reads database and service configuration from the `.env` file at the project root. **Never commit `.env` files - they are covered by `.gitignore` and must be created locally.**
+
+A minimal `.env` example for the public edition:
 
 ```env
+APP_NAME=AURA IVF
+APP_ENV=local
+APP_KEY=base64:...
+APP_DEBUG=true
+APP_URL=http://localhost:8000
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=ivf_public
 DB_USERNAME=root
 DB_PASSWORD=
+
+BROADCAST_CONNECTION=log
+SESSION_DRIVER=database
+CACHE_STORE=database
+QUEUE_CONNECTION=database
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+
+VITE_APP_NAME="${APP_NAME}"
 ```
 
 **Important:** The public edition uses a simplified database configuration. See the "Database Setup" section below.
